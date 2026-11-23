@@ -13,6 +13,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "dbedbe7b30659547b4784b8bdb61d4e1
 "assets/assets/apps/tajweedly_1.jpg": "59c801efd793e2a03c31c1d4fc70cb0a",
 "assets/assets/cv/Ahmed_Motawa_CV_AR.pdf": "f35ad7b61eaa3c863182c47017c08fd7",
 "assets/assets/cv/Ahmed_Motawa_CV_EN.pdf": "7f51abb34252e60c8a0030e9386a72d0",
+"assets/assets/images/app_icon.png": "3a98fc616c34e5ae3ae175b3322c3c85",
 "assets/assets/images/profile.jpg": "ec0d9ad451890c65f81ae823100d6c22",
 "assets/FontManifest.json": "2a3f09429db12146b660976774660777",
 "assets/fonts/MaterialIcons-Regular.otf": "80746779935c52fda03422946db878fc",
@@ -40,10 +41,18 @@ const RESOURCES = {"assets/AssetManifest.bin": "dbedbe7b30659547b4784b8bdb61d4e1
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "147f22664848be8a896b3588ec1c478c",
-"/": "147f22664848be8a896b3588ec1c478c",
+"index.html": "a26a0452a4b3c2caeda0ed69563f1a8b",
+"/": "a26a0452a4b3c2caeda0ed69563f1a8b",
 "main.dart.js": "9752040f5cdfefa286a99405c39454b3",
 "manifest.json": "faecb0582a367f1d57a482a8ff2d8170",
+"splash/img/dark-1x.png": "f81e117b69a4789c6b1fc37f6d8797bc",
+"splash/img/dark-2x.png": "64e74b1bb7706063aff1293c3740e9f7",
+"splash/img/dark-3x.png": "1a8265ca8fe32c868b1570e88e868e37",
+"splash/img/dark-4x.png": "4ad75c6b9f8285af5d6540c4474bc89c",
+"splash/img/light-1x.png": "f81e117b69a4789c6b1fc37f6d8797bc",
+"splash/img/light-2x.png": "64e74b1bb7706063aff1293c3740e9f7",
+"splash/img/light-3x.png": "1a8265ca8fe32c868b1570e88e868e37",
+"splash/img/light-4x.png": "4ad75c6b9f8285af5d6540c4474bc89c",
 "version.json": "be4c05a6bbb5623ea3f3fbfaba95b7d5"};
 // The application shell files that are downloaded before a service worker can
 // start.

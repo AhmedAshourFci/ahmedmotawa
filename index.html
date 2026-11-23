@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html><html><head>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -18,7 +16,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Ahmed Motawa — Flutter & Mobile App Developer portfolio.">
+  <meta name="description" content="Ahmed Motawa — Flutter &amp; Mobile App Developer portfolio.">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -27,81 +25,84 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <title>Ahmed Motawa | Flutter Developer</title>
   <link rel="manifest" href="manifest.json">
-  <style>
-    html, body {
-      width: 100%;
-      height: 100%;
+  <style id="splash-screen-style">
+    html {
+      height: 100%
+    }
+
+    body {
       margin: 0;
-      background: #0a0e1a;
+      min-height: 100%;
+      background-color: #ffffff;
+          background-size: 100% 100%;
     }
 
-    #app-loading {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      background:
-        radial-gradient(ellipse at 50% 42%, rgba(0, 168, 255, .12), transparent 38%),
-        #0a0e1a;
-      font-family: Arial, sans-serif;
-      transition: opacity .25s ease;
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
 
-    .loading-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
+    .contain {
+      display:block;
+      width:100%; height:100%;
+      object-fit: contain;
     }
 
-    .loading-mark {
-      display: grid;
-      width: 62px;
-      height: 62px;
-      place-items: center;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #00a8ff, #2563eb);
-      box-shadow: 0 12px 38px rgba(0, 168, 255, .28);
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: .5px;
+    .stretch {
+      display:block;
+      width:100%; height:100%;
     }
 
-    .loading-title { font-size: 18px; font-weight: 600; }
-    .loading-subtitle { margin-top: -10px; color: #8b9bb0; font-size: 13px; }
-
-    .loading-spinner {
-      width: 27px;
-      height: 27px;
-      margin-top: 5px;
-      border: 2px solid rgba(255, 255, 255, .16);
-      border-top-color: #00a8ff;
-      border-radius: 50%;
-      animation: loading-spin .8s linear infinite;
+    .cover {
+      display:block;
+      width:100%; height:100%;
+      object-fit: cover;
     }
 
-    @keyframes loading-spin { to { transform: rotate(360deg); } }
-    @media (prefers-reduced-motion: reduce) {
-      .loading-spinner { animation-duration: 2.4s; }
-      #app-loading { transition: none; }
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .bottomLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottomRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   </style>
+  <script id="splash-screen-script">
+    function removeSplashFromWeb() {
+      document.getElementById("splash")?.remove();
+      document.getElementById("splash-branding")?.remove();
+      document.body.style.background = "transparent";
+    }
+  </script>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 </head>
 <body>
-  <div id="app-loading" role="status" aria-live="polite">
-    <div class="loading-content">
-      <div class="loading-mark" aria-hidden="true">AM</div>
-      <div class="loading-title">Ahmed Motawa</div>
-      <div class="loading-subtitle">Flutter &amp; Mobile App Developer</div>
-      <div class="loading-spinner" aria-hidden="true"></div>
-    </div>
-  </div>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
-</html>
+  <picture id="splash">
+      <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
+      <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
+      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
+  </picture>
+  <script src="flutter_bootstrap.js" async=""></script>
+
+
+</body></html>
